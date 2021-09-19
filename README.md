@@ -3,18 +3,22 @@
 The application allows you to generate aggregative data based on input files with the following formats:
 
 Job offers:
-  | ------------- | ------------------ |
-  | name | technical-test-jobs.csv |
-  | header | profession_id,contract_type,name,office_latitude,office_longitude |
-  | line (example) | 2,FULL_TIME,Dev Full Stack,48.8768868,2.3091203 |
+
+  | line            | description                                                       |
+  | --------------  | ----------------------------------------------------------------- |
+  | name            | technical-test-jobs.csv                                           |
+  | header          | profession_id,contract_type,name,office_latitude,office_longitude |
+  | line (example)  | 2,FULL_TIME,Dev Full Stack,48.8768868,2.3091203                   |
 
 Professions_id is an external key which is taken from the second file:
 
 Professions:
-  | ------------- | ------------------ |
-  | name | technical-test-professions.csv| 
-  | header | id,name,category_name| 
-  | line (example) | 16,Développement Fullstack,Tech| 
+
+  | line            | description                     |
+  | --------------- | ------------------------------- |
+  | name            | technical-test-professions.csv  | 
+  | header          | id,name,category_name           | 
+  | line (example)  | 16,Développement Fullstack,Tech | 
 
 The files should be stored in a directory that path is defined in config.exs (dev.exs)
 The directory should be available for edit.
